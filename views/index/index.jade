@@ -1,0 +1,25 @@
+extends ../layout
+
+block title
+	title Project Gemini: Top-Quality, Cutting-Edge Software Engineering
+
+block header
+	link(href='http://fonts.googleapis.com/css?family=Montserrat|Lato:100,300' rel='stylesheet' type='text/css')
+	link(href='/styles/index/index.css' rel='stylesheet' type='text/css')
+
+	link(href='/styles/angular-carousel.min.css' rel='stylesheet' type='text/css')
+
+	script(src='/js/angular-carousel.min.js' type='text/javascript')
+
+	script(src='/js/index.js' type='text/javascript')
+
+block content
+	#indexSlides(ng-app='main')
+		slide1
+			include slides/slide1.jade
+		slide2
+			include slides/slide2.jade
+		slide3
+			include slides/slide3.jade
+		slide4
+

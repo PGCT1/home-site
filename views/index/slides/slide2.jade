@@ -1,0 +1,38 @@
+container
+	.ipad(ng-controller='IPadController as IPadCtrl')
+		img(src='/images/index/slide2/ipad-air-black.png')
+		ul(rn-carousel rn-carousel-indicator rn-carousel-index='IPadCtrl.index' class="my-slider standard ng-cloak")
+			li#mocha
+				a(href='http://visionmedia.github.io/mocha/' target='_blank')
+					.mocha mocha
+				text <a href='http://visionmedia.github.io/mocha/' target='_blank'>Mocha</a> is an async-compatible testing framework 
+					| supporting <a href='http://en.wikipedia.org/wiki/RSpec' target='_blank'>RSpec</a> and <a href='http://en.wikipedia.org/wiki/Assert.h' target='_blank'>c-style asserts</a>, 
+					| which we use to guarantee quality assurance.
+				img.coffee(src='/images/index/slide2/CoffeeCupIcon.png')
+			li#amazon
+				a(href='http://aws.amazon.com/' target='_blank')
+					img.aws(src='/images/index/slide2/amazon-web-services.png')
+				text We use <a href='http://aws.amazon.com/' target='_blank'>Amazon AWS</a> for all of our cloud needs. AWS has a rich feature set, from elastic scaling 
+					| nodes (<a href='https://aws.amazon.com/elasticbeanstalk/' target='_blank'>Elastic Beanstalk</a>) 
+					| to their cloud database, <a href='https://aws.amazon.com/dynamodb/' target='_blank'>Dynamo DB</a>.
+				img.cloud(src='/images/index/slide2/cloud.svg')
+			li#angular
+				a(href='http://angularjs.org' target='_blank')
+					img.angular(src='/images/index/slide2/AngularJS-large.png')
+				text <a href='http://angularjs.org' target='_blank'>AngularJS</a>, an open-source project by Google, is 
+					| a front-end <a href='http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller' target='_blank'>MVC framework</a> 
+					| which helps keep client-side code clean, modular, cross-platform, and organized.
+				img.angle(src='/images/index/slide2/Positive_angle.svg')
+			li#node
+				a(href='http://nodejs.org/' target='_blank')
+					img.node(src='/images/index/slide2/nodejs.svg')
+				text Since the launch of <a href='http://nodejs.org/' target='_blank'>Node.js</a> in 2009, repeatedly smart design decisions and a 
+					| fantastic open-source community have caused Node.js to be as revolutionary in the 2010s as Ruby on Rails was in the 2000s.
+				img.network(src='/images/index/slide2/network_coverage.jpg')
+
+	tools
+		p We are active residents of the Node.js ecosystem, and as such subscribe to and 
+			| promote the design patterns supplied by frameworks like Express, Mocha, and Sails.
+		p Client-side, we support current versions of all major platforms (specifically iOS, Android, OSX, Windows, and Linux). 
+			| When practical, we prefer browser-driven clients in Angular JS to native clients. Beyond being a superior development environment, 
+			| browser apps have the advantage of being free from the Appstore and Google Play, both of which are highly regulated and taxed by Apple and Google, respectively.
