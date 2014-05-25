@@ -10,3 +10,8 @@
 ### Modules
 
  - [Angular Carousel](https://github.com/revolunet/angular-carousel)
+
+To run, clone then execute
+
+npm install
+node app.js
