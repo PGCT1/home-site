@@ -17,6 +17,8 @@
     npm install
     node app.js
 
+License: MIT
+
 Copyright (c) 2014 Project Gemini
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
