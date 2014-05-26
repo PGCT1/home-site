@@ -112,6 +112,47 @@
 	
 	//ipad slides
 
+	container{
+	 .ipad{
+	 		ul{
+	 			li{
+
+	 				padding:15px;
+
+					// top image
+
+					a > img{
+						display:block;
+						margin-left:auto;
+						margin-right:auto;
+						width:50%;
+
+					}
+
+					text{
+						display:block;
+						text-align:left;
+
+					}
+
+		 			// bottom image
+
+			 		> img{
+						display:block;
+						margin-left:auto;
+						margin-right:auto;
+						width:40%;
+						
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
 	#amazon{
 		background: #1e5799; /* Old browsers */
 		background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #7db9e8 100%); /* FF3.6+ */
@@ -122,19 +163,8 @@
 		background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#7db9e8 100%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 
-		padding-top:15px;
-
-		img.aws{
-			display:block;
-			width:60%;
-			margin-left:auto;
-			margin-right:auto;
-		}
-
 		text{
-			display:block;
-			text-align:left;
-			margin:25px;
+			margin:10px;
 			margin-top:75px;
 
 			a{
@@ -148,10 +178,6 @@
 		}
 
 		.cloud{
-			display:block;
-			margin-left:auto;
-			margin-right:auto;
-			width:50%;
 			margin-top:65px;
 		}
 
@@ -161,11 +187,8 @@
 			}
 
 			img.cloud{
-				display:block;
 				width:30%;
 				margin-top:0px;
-				margin-left:auto;
-				margin-right:auto;
 			}
 
 		}
@@ -175,7 +198,6 @@
 	#node{
 		position:relative;
 		background-color:black;
-		padding-top:15px;
 
 		a{
 			color:#80bd01;
@@ -185,37 +207,29 @@
 			color:white;
 		}
 
-		img.node{
-			display:block;
-			margin-left:auto;
-			margin-right:auto;
-			width:50%;
-		}
-
-		text{
-			display:block;
-			padding:15px;
-		}
-
 		img.network{
-			position:absolute;
-			bottom:0px;
-			left:0px;
-			width:100%;
+			width:40%;
 		}
 
 		@media(max-width:550px){
-
 			text{
-				text-align:left;
+				padding: 0px;
+				margin-top: 10px;
+				margin-bottom: 5px;
+			}
+
+		}
+
+		@media(min-width:551px){
+			text{
+				padding:15px;
 			}
 
 			img.network{
-				position:relative;
-				display:block;
-				width:40%;
-				margin-left:auto;
-				margin-right:auto;
+				position:absolute;
+				bottom:0px;
+				left:0px;
+				width:100%;
 			}
 
 		}
@@ -236,25 +250,12 @@
 			color:rgb(166,18,13)
 		}
 
-		img.angular{
-			display:block;
-			width:60%;
-			margin-left:auto;
-			margin-right:auto;
-		}
-
 		text{
-			display:block;
-			text-align:left;
 			margin-top:20px;
 		}
 
 		img.angle{
-			display:block;
 			margin-top:200px;
-			width:40%;
-			margin-left:auto;
-			margin-right:auto;
 		}
 
 		@media(max-width:550px){
@@ -271,7 +272,6 @@
 	#mocha{
 		background-color:white;
 		color:black;
-		padding:20px;
 		text-align:center;
 
 		a{
@@ -295,16 +295,10 @@
 		}
 
 		text{
-			display:block;
-			text-align:left;
 			margin-top:30px;
 		}
 
 		img.coffee{
-			display:block;
-			margin-left:auto;
-			margin-right:auto;
-			width:40%;
 			margin-top:155px;
 		}
 
