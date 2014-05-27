@@ -5,11 +5,17 @@
 	color:white;
 	display:block;
 	background-color:black;
-	background-image:url(/images/index/slide1/cubes-background.jpg);
+	background-image:url(/images/index/slide1/Earth-1260.jpg);
 	background-repeat:no-repeat;
 	background-position:center;
 	padding-left:40px;
 	padding-right:40px;
+
+	panel{
+		display:inline-block;
+		padding:2px;
+		border:1px solid rgba(0,0,0,.5);
+	}
 
 	@media(max-width:480px){
 		padding-left:7px;
@@ -39,8 +45,8 @@
 	description{
 		.h2;
 		color:white;
-		text-shadow:0px 0px 1px white;
-		font-weight:100;
+		text-shadow: 0px 0px 6px rgba(0, 0, 0, 1.0);
+		font-family:Montserrat;
 		margin-top:100px;
 		margin-bottom:80px;
 		font-size:32px;
@@ -57,14 +63,13 @@
 	}
 
 	features{
-		text-align:left;
-		@media(min-width:769px){
-			margin-top:90px;
-			margin-bottom:100px;
-		}
+		display:block;
+		text-align:center;
+		background-color:rgba(0,0,0,.8);
 
 		feature{
 			display:inline-block;
+			text-align:left;
 			min-width:400px;
 			max-width:450px;
 			margin:30px;

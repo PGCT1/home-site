@@ -30,6 +30,9 @@ module.exports.routes = {
   '/': {
     view: 'index/index'
   },
+  '/philosophy':{
+    view: 'philosophy/index'
+  }
 
 
   // Custom routes here...
