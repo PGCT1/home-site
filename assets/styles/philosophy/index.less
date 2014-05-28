@@ -1,3 +1,4 @@
+@import (reference) '../global.less';
 
 .h1{
 	font-family:Montserrat;
@@ -18,7 +19,21 @@ body{
 	background: linear-gradient(to bottom,  rgba(232,241,255,1) 1%,rgba(190,201,247,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f1ff', endColorstr='#bec9f7',GradientType=0 ); /* IE6-9 */
 
+	a{
+		color:@light-theme-link-color;
+	}
 
+	a:hover{
+		color:@light-theme-link-color-hover;
+	}
+
+	#contact{
+		background-color:@light-theme-link-color;
+	}
+
+	#contact:hover{
+		background-color:@light-theme-link-color-hover;
+	}
 
 	philosophies{
 		font-family:'Open Sans',sans-serif;

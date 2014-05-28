@@ -1,5 +1,9 @@
 
-@primary-color:#428bca;
+@primary-color:#3A6399;
+@link-color:#4381B7;
+
+@light-theme-link-color:#428bca;
+@light-theme-link-color-hover:#2a6496;
 
 //bootstrap overloads
 
@@ -9,6 +13,21 @@
 
 .nav>li>a:hover, .nav>li>a:focus{
 	background-color:transparent;
+}
+
+.navbar-brand, .navbar-nav>li>a{
+	text-shadow:none;
+	font-family:'Open Sans',sans-serif;
+	font-weight:400;
+	color:@primary-color;
+}
+
+a{
+	color:@link-color;
+}
+
+a:hover{
+	color:lighten(@link-color,15%);
 }
 
 @media (min-width: 768px){
@@ -74,7 +93,7 @@ body{
 		font-size:14px;
 		color:#ddd;
 	}
-	
+
 	#contact{
 		color:white;
 		display:block;
