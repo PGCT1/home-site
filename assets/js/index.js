@@ -47,16 +47,3 @@
 	}]);
 
 })();
-
-$().ready(function(){
-
-  //set email to contact button href
-  
-  var base64 = 'eW91ckBlbWFpbC5jb20=';
-
-  setTimeout(function(){
-    $('#con'+'tact').attr('href','mail'+'to:'+atob(base64));
-  },1000);
-
-})
-
