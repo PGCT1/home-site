@@ -5,26 +5,12 @@
 	color:white;
 	display:block;
 	background-color:black;
-	background-image:url(/images/index/slide1/Earth-1260.jpg);
 	background-repeat:no-repeat;
-	background-position:center;
 	padding-left:40px;
 	padding-right:40px;
-
-	panel{
-		display:inline-block;
-		padding:2px;
-		border:1px solid rgba(0,0,0,.5);
-	}
-
-	@media(max-width:480px){
-		padding-left:7px;
-		padding-right:7px;
-	}
-
-	@media(min-width:769px){
-		padding-bottom:70px;
-	}
+	padding-bottom:15px;
+	background-image:url(/images/index/slide1/Earth-1260.jpg);
+	background-position:center;
 
 	.anchor{
 		height:1px;
@@ -72,6 +58,7 @@
 			text-align:left;
 			min-width:400px;
 			max-width:450px;
+			width:28%;
 			margin:30px;
 
 			img{
@@ -100,6 +87,35 @@
 
 		}
 
+	}
+
+	@media(max-width:1490px){
+		features{
+			feature{
+				width:40%;
+			}
+		}
+	}
+
+	@media(max-width:1030px){
+		features{
+			feature{
+				width:65%;
+				max-width:600px;
+			}
+		}
+	}
+
+	@media(max-width:480px){
+		padding-left:7px;
+		padding-right:7px;
+		background-image:url(/images/index/slide1/Earth-1260-mobile.jpg);
+		background-width:100%;
+		background-position:top;
+	}
+
+	@media(min-width:769px){
+		padding-bottom:70px;
 	}
 
 }

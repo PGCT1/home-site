@@ -11,6 +11,10 @@
 	background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(69,72,77,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=0 ); /* IE6-9 */
 
+	background:url(/images/index/slide3/abstract-bg.jpg);
+	background-size:100% 100%;
+	background-position:center;
+	padding-top:60px;
 	min-height:600px;
 
 
@@ -22,7 +26,7 @@
 	sections{
 		display:block;
 		text-align:center;
-		padding:15px;
+		padding:18px;
 
 		section{
 			display:inline-block;
@@ -96,13 +100,18 @@
 
 	}
 
-	@media(max-width:550px){//phone scaling
+	@media(max-width:380px){
+		.h1{
+			font-size:32px;
+		}
+	}
+
+	@media(max-width:550px){
 		sections{
-			padding:8px;
 
 			section{
 				margin:0px;
-				min-width:280px;
+				min-width:264px;
 
 				.h2{
 					margin-top:45px;
