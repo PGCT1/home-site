@@ -1,7 +1,13 @@
 - function setParam(key, value){locals[key] = value;}
 - function getParam(key){return locals[key];}
 
-- function pageTitle(){return (locals['title'] ? locals['title'] : locals['section'] + ' - Project Gemini');}
+- function pageTitle(){
+-   if(locals['title']){
+-       return locals['title'];
+-   }
+-   
+-   return (locals['section'] ? locals['section'] + ' - Project Gemini' : 'Project Gemini');
+- }
 
 block parameters
 
