@@ -1,10 +1,12 @@
 extends ../layout
 
+append parameters
+	- setParam('section', 'Projects')
+
+
 mixin github(url)
 	a.github(href=url) GitHub
 
-block title
-	title Projects - Project Gemini: Top-Quality, Cutting-Edge Software Engineering
 
 block header
 	link(href='/styles/projects/index.css' rel='stylesheet' type='text/css')

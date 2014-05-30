@@ -1,7 +1,14 @@
+- function setParam(key, value){locals[key] = value;}
+- function getParam(key){return locals[key];}
+
+- function pageTitle(){return (locals['title'] ? locals['title'] : locals['section'] + ' - Project Gemini');}
+
+block parameters
+
 doctype
 html
   head
-    block title
+    title=pageTitle()
 
     meta(charset="UTF-8")
 
