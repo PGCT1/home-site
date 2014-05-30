@@ -1,5 +1,8 @@
 extends ../layout
 
+mixin github(url)
+	a.github(href=url) GitHub
+
 block title
 	title Projects - Project Gemini: Top-Quality, Cutting-Edge Software Engineering
 
@@ -10,12 +13,12 @@ block content
 	projects
 		project
 			title Project Gemini Main Site
-			a.github(href='https://github.com/PGCT1/home-site')
+			+github('https://github.com/PGCT1/home-site')
 			description
-				p Our main site is a clean, streamline example of how we write client-server apps. Its primary frameworks are 
+				p Our main site is a clean, streamline example of how we write client-server applications. Its primary frameworks are 
 					| Sails (backend), Angular (frontend), and Mocha (testing). It also makes use of our internally-developed 
-					| templates, which you may find elsewhere on this page.
+					| templates, which you may find described elsewhere on this projects page.
 				p The end result is code written on a very high level of abstraction, resulting in semantically clear code.
 
-		a#contact(href='#') CONTACT US
+	a#contact(href='#') CONTACT US
 
