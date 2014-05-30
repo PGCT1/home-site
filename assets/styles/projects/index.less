@@ -1,0 +1,62 @@
+@import (reference) '../global.less';
+
+body{
+	.light-background;
+
+	a{
+		color:@light-theme-link-color;
+	}
+
+	a:hover{
+		color:@light-theme-link-color-hover;
+	}
+
+	#contact{
+		background-color:@light-theme-link-color;
+	}
+
+	#contact:hover{
+		background-color:@light-theme-link-color-hover;
+	}
+
+	projects{
+		font-family:'Open Sans',sans-serif;
+		display:block;
+		text-align:center;
+		padding-bottom:70px;
+
+		project{
+			display:inline-block;
+			text-align:left;
+			vertical-align:top;
+			max-width:550px;
+			margin:15px;
+
+			title{
+				.h1;
+				display:block;
+				margin-bottom:25px;
+				margin-left:-2px;
+				margin-top:20px;
+			}
+
+			description{
+				display:block;
+			}
+
+		}
+
+	}
+
+	@media(min-width:1024px){
+		projects{
+			project{
+				title{
+					font-size:49px;
+					line-height:59px;
+				}
+			}
+		}
+	}
+
+}

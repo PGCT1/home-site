@@ -1,0 +1,21 @@
+extends ../layout
+
+block title
+	title Projects - Project Gemini: Top-Quality, Cutting-Edge Software Engineering
+
+block header
+	link(href='/styles/projects/index.css' rel='stylesheet' type='text/css')
+
+block content
+	projects
+		project
+			title Project Gemini Main Site
+			a.github(href='https://github.com/PGCT1/home-site')
+			description
+				p Our main site is a clean, streamline example of how we write client-server apps. Its primary frameworks are 
+					| Sails (backend), Angular (frontend), and Mocha (testing). It also makes use of our internally-developed 
+					| templates, which you may find elsewhere on this page.
+				p The end result is code written on a very high level of abstraction, resulting in semantically clear code.
+
+		a#contact(href='#') CONTACT US
+
