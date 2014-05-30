@@ -1,11 +1,16 @@
 
-// theme variables
+// theme variables / classes
 
 @primary-color:#3A6399;
 @link-color:#4381B7;
 
 @light-theme-link-color:#428bca;
 @light-theme-link-color-hover:#2a6496;
+
+@light-readable-text:'Open Sans',sans-serif;
+
+@min-desktop-resolution:1025px;
+@max-tablet-resolution:1024px;
 
 .light-background{
 	background-color:white;
@@ -69,7 +74,17 @@ a:hover{
 
 // universal layout
 
+html{
+	height:100%;
+}
+
 body{
+
+	@footer-height:28px;
+
+	position:relative;
+  min-height:100%;
+  padding-bottom:@footer-height;
 
 	panel{
 		display:inline-block;
@@ -113,12 +128,18 @@ body{
 	}
 
 	footer{
+		position:absolute;
+		bottom:0px;
+		width:100%;
 		display:block;
+    vertical-align:bottom;
 		background-color:black;
 		text-align:center;
 		font-family:'Open Sans',sans-serif;
 		font-size:14px;
 		color:#ddd;
+		height:@footer-height;
+		margin-top:-1*@footer-height;
 	}
 
 	#contact{
