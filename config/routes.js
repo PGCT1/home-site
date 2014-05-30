@@ -32,6 +32,9 @@ module.exports.routes = {
   },
   '/philosophy':{
     view: 'philosophy/index'
+  },
+  '/projects':{
+  	view: 'projects/index'
   }
 
 
