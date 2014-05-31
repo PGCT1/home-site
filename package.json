@@ -24,8 +24,8 @@
     "grunt-contrib-coffee": "~0.10.1"
   },
   "scripts": {
-    "start": "node app.js",
-    "debug": "node debug app.js"
+    "start": "node --harmony app.js",
+    "debug": "node --harmony debug app.js"
   },
   "main": "app.js",
   "repository": {

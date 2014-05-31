@@ -5,22 +5,51 @@ append parameters
 
 
 mixin github(url)
-	a.github(href=url) GitHub
+	a.github(href=url target='_blank')
+		img(src='/images/icons/external-128.png')
+		|  GitHub
 
+mixin codeLink(url)
+	a(href=url target='_blank')
+		img.code(src=url)
 
 block header
 	link(href='/styles/projects/index.css' rel='stylesheet' type='text/css')
 
 block content
+
 	projects
 		project
+			a(name='projectGeminiMainSite')
 			title Project Gemini Main Site
 			+github('https://github.com/PGCT1/home-site')
 			description
-				p Our main site is a clean, streamline example of how we write client-server applications. Its primary frameworks are 
-					| Sails (backend), Angular (frontend), and Mocha (testing). It also makes use of our internally-developed 
+				p Our main site is a clean, streamline example of how we write client-server applications. Its written in 
+					| <a href='https://github.com/joyent/node' target='_blank'>Node.js</a>, with primary frameworks  
+					| <a href='https://github.com/balderdashy/sails' target='_blank'>Sails</a> (backend), 
+					| <a href='https://github.com/angular/angular.js' target='_blank'>Angular</a> (frontend), and 
+					| <a href='https://github.com/visionmedia/mocha' target='_blank'>Mocha</a> (testing). It also makes use of our internally-developed 
 					| templates, which you may find described elsewhere on this projects page.
-				p The end result is code written on a very high level of abstraction, resulting in semantically clear code.
+				p The end result is code written on a very high level of abstraction, resulting in semantically clear code:
+				
+				+codeLink('/images/projects/code.png')
+
+			a.fullProfile(href='#') View Full Profile
+
+		project
+			a(name='sailsMVCTemplates')
+			title Sails MVC Templates
+			+github('https://github.com/PGCT1/home-site')
+			description
+				p Many projects utilize the same application-level components with little or no deviation in the necessary 
+					| implementation. For example, nearly every application implements the concept of a user, which virtually 
+					| always comes packaged with some sort of concept of uniqueness (maybe email, username, or an id), authentication (a password, database hash storage), 
+					| and short-lived sessions.
+				p Rather than reinvent the wheel for every application, we've simply constructed a prototype TemplateUser class. When 
+					| creating a new application, simply inherit from this TemplateUser class and get all of the above features right out of the 
+					| box.
+
+			a.fullProfile(href='#') View Full Profile
 
 	a#contact(href='#') CONTACT US
 
