@@ -109,13 +109,27 @@
 	@media(max-width:480px){
 		padding-left:7px;
 		padding-right:7px;
-		//background-image:url(/images/index/slide1/Earth-1260-mobile.jpg);
 		background-width:100%;
 		background-position:top;
 	}
 
 	@media(min-width:769px){
 		padding-bottom:70px;
+		background-position-y:-80px;
+
+		slogan{
+			@h1-shadow-color:rgba(0,0,0,.7);
+
+			text-shadow:2px 2px 0 @h1-shadow-color,
+				-2px -2px 0 @h1-shadow-color,
+				2px -2px 0 @h1-shadow-color,
+				-2px 2px 0 @h1-shadow-color,
+				0px 2px 0 @h1-shadow-color,
+				2px 0px 0 @h1-shadow-color,
+				0px -2px 0 @h1-shadow-color,
+				-2px 0px 0 @h1-shadow-color;
+		}
+
 	}
 
 }
