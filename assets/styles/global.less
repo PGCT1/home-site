@@ -1,5 +1,6 @@
+@import 'components/index.less';
 
-// theme variables / classes
+// theme variables
 
 @primary-color:#3A6399;
 @link-color:#4381B7;
@@ -7,74 +8,10 @@
 @light-theme-link-color:#428bca;
 @light-theme-link-color-hover:#2a6496;
 
-@light-readable-text:'Open Sans',sans-serif;
-
 @min-desktop-resolution:1025px;
 @max-tablet-resolution:1024px;
 @min-tablet-resolution:551px;
 @max-phone-resolution:550px;
-
-.light-background{
-	background-color:white;
-	background: rgb(239,245,255); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(239,245,255,1) 0%, rgba(208,214,239,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(239,245,255,1)), color-stop(100%,rgba(208,214,239,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(239,245,255,1) 0%,rgba(208,214,239,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(239,245,255,1) 0%,rgba(208,214,239,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(239,245,255,1) 0%,rgba(208,214,239,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(239,245,255,1) 0%,rgba(208,214,239,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff5ff', endColorstr='#d0d6ef',GradientType=0 ); /* IE6-9 */
-
-	background-attachment:fixed;
-}
-
-.h1{
-	font-family:Montserrat;
-	font-size:36px;
-	line-height:44px;
-}
-
-//bootstrap overloads
-
-.icon-bar{
-	background-color:white;
-}
-
-.nav>li>a:hover, .nav>li>a:focus{
-	background-color:transparent;
-}
-
-.navbar-brand, .navbar-nav>li>a{
-	text-shadow:none;
-	font-family:'Open Sans',sans-serif;
-	font-weight:400;
-	color:@primary-color;
-}
-
-.navbar-nav>li>a:hover{
-	color:lighten(@primary-color,10%);
-}
-
-a{
-	color:@link-color;
-}
-
-a:hover{
-	color:lighten(@link-color,15%);
-}
-
-@media (min-width: 768px){
-	.container{
-		width:747px;
-	}
-}
-
-#top{
-	background-color:black;
-}
-
-
-
 
 // universal layout
 
@@ -83,11 +20,6 @@ html{
 }
 
 body{
-	
-	banner{
-		display:block;
-		height:150px;
-	}
 
 	@footer-height:28px;
 
@@ -127,10 +59,12 @@ body{
 
 	}
 
-	font-family: Lato;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 18px;
 	line-height:28px;
 	font-weight: 300;
+	.light-background;
+	padding-bottom:100px;
 
 	.navbar{
 		margin-bottom:0px;
@@ -144,7 +78,6 @@ body{
     vertical-align:bottom;
 		background-color:black;
 		text-align:center;
-		font-family:'Open Sans',sans-serif;
 		font-size:14px;
 		color:#ddd;
 		height:@footer-height;
@@ -152,7 +85,6 @@ body{
 	}
 
 	#contact{
-		font-family: Lato;
 		font-size: 18px;
 		line-height:28px;
 		font-weight: 300;

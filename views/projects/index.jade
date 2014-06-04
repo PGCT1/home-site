@@ -17,12 +17,13 @@ block header
 	link(href='/styles/projects/index.css' rel='stylesheet' type='text/css')
 
 block content
-	banner
-	projects
-		project
-			title Project Gemini Main Site
+	.banner
+
+	ol.projects.primary-content-holder
+		li.project
+			.h1 Project Gemini Site
 			+github('https://github.com/PGCT1/home-site')
-			description
+			.description
 				p Our main site is a clean, streamline demonstration of how we write responsive, cross-platform applications. It's written in 
 					| <a href='https://github.com/joyent/node' target='_blank'>Node.js</a>, with primary frameworks  
 					| <a href='https://github.com/balderdashy/sails' target='_blank'>Sails</a> (backend), 
@@ -36,10 +37,10 @@ block content
 
 			a.fullProfile(href='#') View Full Profile
 
-		project
-			title Sails MVC Prototypes
+		li.project
+			.h1 Sails MVC Prototypes
 			+github('https://github.com/PGCT1/sails-proto')
-			description
+			.description
 				p Many projects utilize the same application-level components with little or no deviation in the necessary 
 					| implementation. For example, nearly every application implements the concept of a user, which virtually 
 					| always comes packaged with some sort of concept of uniqueness (maybe email, username, or an id), authentication (a password, database hash storage), 

@@ -1,6 +1,4 @@
 
-// configurable layout parameters for views to set
-
 - function setParam(key, value){locals[key] = value;}
 - function getParam(key){return locals[key];}
 
@@ -14,26 +12,23 @@
 
 block parameters
 
-// page skeleton
-
 doctype
 html
   head
     title=pageTitle()
 
-    meta(charset="UTF-8")
+    meta(charset='UTF-8')
 
     // Viewport mobile tag for sensible mobile support
-    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
 
     //styles
 
-    link(href='http://fonts.googleapis.com/css?family=Montserrat|Lato:100,300|Open+Sans:400' rel='stylesheet' type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400' rel='stylesheet' type='text/css')
 
-    link(href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", rel="stylesheet")
-    link(href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css", rel="stylesheet")
+    link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet' type='text/css')
 
-    link(href="/styles/global.css", rel="stylesheet")
+    link(href='/styles/global.css' rel='stylesheet' type='text/css')
 
     include global/js-dependencies
 

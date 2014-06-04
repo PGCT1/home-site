@@ -7,42 +7,43 @@ block header
 	link(href='/styles/philosophy/index.css' rel='stylesheet' type='text/css')
 
 block content
-	banner
-	philosophies
-		- 
-			philosophy
-				topic Existential
-				text Our goal is to engineer innovative, quality software which will directly result in the advancement of society. 
-					| Practically, we pursue this through three types of projects: business, charitable, and research. Charitable contributions include, but are not 
-					| limited to, financial donations, free software projects for non-profit organizations, software education, and open-source contributions.
 
-			philosophy
-				topic Software Quality
-				text Quality software is not an impressionistic or nebulous concept, but is rather software which clearly expresses the following: 
-					| algorithmic correctness (the software does what it is intended to do), modularity (the code is organized into units which interact through interfaces), and lucidity (easily understood/readable). 
-					| Extensive discussion of these is on our <a href='/blog'>blog</a>.
+	.banner
 
-			philosophy
-				topic Business
-				text Our client relationships are direct, professional, and result-oriented. Clients may retain code particular to their 
-					| application under their own proprietary license; however, non-application specific modules (defined as modules which, upon 3rd-party inspection, 
-					| are not readily apparent as originiating from the project in question) carry no such licensing guarantees.
+	ol.philosophies.primary-content-holder
+		li.philosophy
+			.h1 Purpose
+			p Our goal is to engineer innovative, quality software which will directly result in the advancement of society. 
+				| Practically, we pursue this through three types of projects: business, charitable, and research. Charitable contributions include, but are not 
+				| limited to, financial donations, free software projects for non-profit organizations, software education, and open-source contributions.
 
-			philosophy
-				topic Hiring
-				text We hire people who love to produce quality software, and hire exclusively based on this trait. If you're seeking to join us, 
-					| relocation is offered, but not required. We will work with you to resolve any paper issues which arise.
+		li.philosophy
+			.h1 Software Quality
+			p Quality software is not an impressionistic or nebulous concept, but is rather software which clearly expresses the following: 
+				| algorithmic correctness (the software does what it is intended to do), modularity (the code is organized into units which interact through interfaces), and lucidity (easily understood/readable). 
+				| Extensive discussion of these is on our <a href='/blog'>blog</a>.
 
-			philosophy
-				topic Charity
-				text We do our best to regularly contribute software engineering resources to non-profit organizations, typically under the 
-					| stipulation that all software produced remain open-source and publicly visible. You can view some of them on our <a href='/projects'>projects</a> page or 
-					| our <a href='https://github.com/PGCT1'>GitHub</a>.
+		li.philosophy
+			.h1 Business
+			p Our client relationships are direct, professional, and result-oriented. Clients may retain code particular to their 
+				| application under their own proprietary license; however, non-application specific modules (defined as modules which, upon 3rd-party inspection, 
+				| are not readily apparent as originiating from the project in question) carry no such licensing guarantees.
 
-			philosophy
-				topic Security
-				text We understand how to work on high-security projects, and will collaborate over <a href='/public-key.pgp' target='_blank'>secure communication channels</a> 
-					| as our clients wish.
+		li.philosophy
+			.h1 Hiring
+			p We hire people who love to produce quality software, and hire exclusively based on this trait. If you're seeking to join us, 
+				| relocation is offered, but not required. We will work with you to resolve any paper issues which arise.
+
+		li.philosophy
+			.h1 Charity
+			p We do our best to regularly contribute software engineering resources to non-profit organizations, typically under the 
+				| stipulation that all software produced remain open-source and publicly visible. You can view some of them on our <a href='/projects'>projects</a> page or 
+				| our <a href='https://github.com/PGCT1'>GitHub</a>.
+
+		li.philosophy
+			.h1 Security
+			p We understand how to work on high-security projects, and will collaborate over <a href='/public-key.pgp' target='_blank'>secure communication channels</a> 
+				| as our clients wish.
 
 	a#contact(href='#') CONTACT US
 
