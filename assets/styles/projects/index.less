@@ -21,8 +21,10 @@ body{
 	}
 
 	banner{
-		background-image:url('/images/index/slide1/cityscapes-night_00292708.jpg');
-		background-position-y:-300px;
+		display:block;
+		height:150px;
+		background-image:url('/images/projects/mobile-banner.jpg');
+		background-size:auto 100%;
 	}
 
 	projects{
@@ -101,6 +103,14 @@ body{
 					}
 				}
 			}
+		}
+	}
+
+	@media(min-width:@min-tablet-resolution){
+		banner{
+			background-image:url('/images/splash.jpg');
+			background-position:0px -300px;
+			background-size:auto auto;
 		}
 	}
 

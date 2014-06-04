@@ -23,8 +23,8 @@ body{
 	banner{
 		display:block;
 		height:150px;
-		background-image:url('/images/index/slide1/cityscapes-night_00292708.jpg');
-		background-position-y:-600px;
+		background-image:url('/images/philosophy/mobile-banner.jpg');
+		background-size:auto 100%;
 	}
 
 	philosophies{
@@ -53,6 +53,14 @@ body{
 
 		}
 
+	}
+
+	@media(min-width:@min-tablet-resolution){
+		banner{
+			background-image:url('/images/splash.jpg');
+			background-position:0px -700px;
+			background-size:auto auto;
+		}
 	}
 
 	@media(min-width:@min-desktop-resolution){
