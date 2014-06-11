@@ -1,0 +1,208 @@
+@import (reference) '../index.less';
+
+.opening-slide{
+	padding-top:50px;
+
+	.main-center-block{
+		margin-top:90px;
+		height:380px;
+
+		.logo{
+			float:left;
+			width:150px;
+			height:300px;
+			margin-left:50px;
+			margin-right:100px;
+			background-image:url('/images/index/logo.svg');
+			background-size:100%;
+			background-repeat:no-repeat;
+		}
+
+		.headers{
+			float:left;
+
+			.title{
+				margin-top:80px;
+				font-size:110px;
+				line-height:125px;
+				font-family:Lato;
+			}
+
+			.subtitle{
+				font-size:22px;
+				font-family:Lato;
+				padding-left:6px;
+				letter-spacing:1px;
+
+				.no-wrap{
+					display:inline-block;
+					white-space:nowrap;
+					margin-right:5px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.links{
+		display:block;
+		margin-top:50px;
+		width:740px;
+		margin-left:auto;
+		margin-right:auto;
+
+		>a{
+			display:inline-block;
+			padding:10px;
+			margin-left:35px;
+			margin-right:35px;
+			font-size:28px;
+			font-family:Lato;
+			color:black;
+			opacity:0.6;
+		}
+
+		>a:hover{
+			color:#428bca;
+		}
+
+	}
+
+}
+
+//tablet/small desktop specification
+
+@media(max-width:1024px){
+	.opening-slide{
+
+		.main-center-block{
+			height:250px;
+
+			.logo{
+				width:100px;
+				height:200px;
+				margin-right:50px;
+			}
+
+			.headers{
+
+				.title{
+					margin-top:60px;
+					font-size:80px;
+					line-height:90px;
+				}
+
+				.subtitle{
+					font-size:18px;
+					font-family:Lato;
+					padding-left:4px;
+					letter-spacing:1px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+//phone specification
+
+@media(max-width:600px){
+	.opening-slide{
+		.main-center-block{
+			margin-top:40px;
+
+			.logo{
+				display:block;
+				float:none;
+				margin-left:auto;
+				margin-right:auto;
+			}
+
+			.headers{
+				float:none;
+				text-align:center;
+
+				.title{
+					margin-bottom:10px;
+				}
+
+			}
+
+		}
+	}
+}
+
+@media(max-width:767px){
+	.opening-slide{
+		.links{
+			display:none;
+		}
+	}
+
+}
+
+//mid desktop specialization
+
+@media(min-width:1266px){
+
+	.opening-slide{
+		.main-center-block{
+			width:1200px;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+	}
+
+}
+
+//large desktop specialization
+
+@media(min-width:1600px){
+
+	.opening-slide{
+
+		.main-center-block{
+			width:1500px;
+
+			.logo{
+				width:200px;
+				height:400px;
+			}
+
+			.headers{
+
+				.title{
+					margin-top:95px;
+					font-size:170px;
+					line-height:185px;
+				}
+
+				.subtitle{
+					font-size:28px;
+					font-family:Lato;
+					padding-left:10px;
+					letter-spacing:2px;
+
+					.no-wrap{
+						margin-right:9px;
+					}
+
+				}
+
+			}
+
+		}
+
+		.links{
+			margin-top:100px;
+		}
+
+	}
+
+}

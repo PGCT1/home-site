@@ -1,6 +1,4 @@
-@import 'slides/slide3.less';
-@import 'slides/slide2.less';
-@import 'slides/slide1.less';
+@import 'slides/opening-presentation.less';
 
 .h1{
 	display:block;
@@ -28,4 +26,24 @@
 nobreak{
 	display:inline;
 	white-space:nowrap;
+}
+
+body{
+
+	// abnormal overrides for main page:
+
+	header{
+		display:none;
+	}
+
+	@media(max-width:767px){
+		header{
+			display:block;
+		}
+	}
+
+	footer{
+		display:none !important;
+	}
+
 }

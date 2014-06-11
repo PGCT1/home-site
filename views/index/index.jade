@@ -15,10 +15,17 @@ block header
 	script(src='/js/index.js' type='text/javascript')
 
 block content
-	#indexSlides(ng-app='main')
-		slide1
-			include slides/slide1.jade
-		slide2
-			include slides/slide2.jade
-		slide3
-			include slides/slide3.jade
+	#indexSlides
+		.opening-slide
+			.main-center-block
+				.logo
+				.headers
+					.title Gemini
+					.subtitle
+						.no-wrap Software Engineering.
+						.no-wrap Absolute perfection.
+			.links
+				a(href='/philosophy') Philosophy
+				a(href='/projects') Projects
+				a(href='/team') Team
+				a(href='/blog') Blog
