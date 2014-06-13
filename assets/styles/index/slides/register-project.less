@@ -2,5 +2,81 @@
 .register-project{
 	background-color:black;
 	color:white;
-	height:500px;
+	padding:20px 0px 50px 0px;
+
+	.h1{
+		margin-bottom:0px;
+	}
+
+	form{
+		display:block;
+		width:96%;
+		margin:20px auto;
+
+		.section{
+			display:inline-block;
+			width:50%;
+			padding:20px;
+			vertical-align:top;
+
+			label{
+				display:block;
+				font-family:'Lato',sans-serif;
+				font-weight:normal;
+				font-size:28px;
+				margin:15px 0px;
+			}
+
+			textarea{
+				color:black;
+				border:2px solid black;
+				border-radius:5px;
+				padding:5px;
+				width:100%;
+				resize:none;
+				outline:none;
+				height:43px;
+			}
+
+			textarea:focus{
+				border-color:#3388cc;
+			}
+
+			textarea.medium{
+				height:86px;
+			}
+
+			textarea.big{
+				height:302px;
+			}
+
+		}
+
+		.greenButton{
+			border-radius:5px;
+			width:300px;
+			height:100px;
+			text-align:center;
+			padding-top:34px;
+		}
+
+	}
+
+	@media(max-width:1024px){
+
+		form{
+			width:100%;
+			padding:3%;
+
+			.section{
+				display:block;
+				width:100%;
+				padding:0px;
+				margin:0px auto;
+			}
+
+		}
+
+	}
+
 }
