@@ -1,4 +1,5 @@
-@import 'slides/opening-presentation.less';
+@import 'slides/register-project.less';
+@import 'slides/opening.less';
 
 .h1{
 	display:block;
@@ -28,12 +29,18 @@ nobreak{
 	white-space:nowrap;
 }
 
-body{
+html > body{
+	padding-bottom:0px;
 
-	// abnormal overrides for main page:
-
+	// abnormal override for main page:
 	header{
 		display:none;
+	}
+
+	ol.slides{
+    list-style:none;
+    padding-left:0;
+    margin-bottom:0px;
 	}
 
 	@media(max-width:767px){

@@ -15,17 +15,8 @@ block header
 	script(src='/js/index.js' type='text/javascript')
 
 block content
-	#indexSlides
-		.opening-slide
-			.main-center-block
-				.logo
-				.headers
-					.title Gemini
-					.subtitle
-						.no-wrap Software Engineering.
-						.no-wrap Absolute perfection.
-			.links
-				a(href='/philosophy') Philosophy
-				a(href='/projects') Projects
-				a(href='/team') Team
-				a(href='/blog') Blog
+	ol.slides
+		li
+			include slides/opening
+		li
+			include slides/register-project
