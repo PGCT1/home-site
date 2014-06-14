@@ -39,7 +39,10 @@
 			}
 
 			textarea:focus{
-				border-color:#3388cc;
+				border-color:rgba(51,136,204,.8);
+				-webkit-box-shadow:0px 0px 8px rgba(51,136,204,.8);
+				-moz-box-shadow:0px 0px 8px rgba(51,136,204,.8);
+				box-shadow:0px 0px 8px rgba(51,136,204,.8);
 			}
 
 			textarea.medium{
@@ -55,6 +58,7 @@
 		.greenButton{
 			border-radius:5px;
 			width:300px;
+			max-width:95%;
 			height:100px;
 			text-align:center;
 			padding-top:34px;
@@ -63,6 +67,7 @@
 	}
 
 	@media(max-width:1024px){
+		padding:20px 0px 10px 0px;
 
 		form{
 			width:100%;
