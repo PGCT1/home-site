@@ -113,8 +113,10 @@
 
 @media(max-width:600px){
 	.opening-slide{
+		padding-top:0px;
+
 		.main-center-block{
-			margin-top:40px;
+			margin-top:25px;
 
 			.logo{
 				display:block;
@@ -125,7 +127,7 @@
 
 			.headers{
 				display:block;
-				margin:50px auto 20px auto;
+				margin:30px auto 20px auto;
 				text-align:center;
 
 				.title{
@@ -135,14 +137,31 @@
 			}
 
 		}
+
 	}
+
 }
 
 @media(max-width:767px){
 	.opening-slide{
+		padding-bottom:20px;
+
 		.links{
-			display:none;
+			width:100%;
+			text-align:center;
+
+			>a{
+				display:inline-block;
+				margin:0px auto;
+				min-width:290px;
+			}
+
 		}
+
+		.links{
+			margin-top:70px;
+		}
+
 	}
 
 }
