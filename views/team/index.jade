@@ -2,6 +2,7 @@ extends ../layout
 
 append parameters
 	- setParam('section', 'Team')
+	- var members = [{profileImageUrl:'img1','name':'name1',biography:'biography 1'},{profileImageUrl:'img2','name':'name2',biography:'biography 2'}]
 
 block header
 	link(href='/styles/team/index.css' rel='stylesheet' type='text/css')
@@ -11,7 +12,8 @@ block content
 	.banner
 
 	ol.members.primary-content-holder
-		li.member
-			img
-			.member-name John Doe
-			p.description John Doe's description
+		each member in members
+			li.member
+				.profile-image(style='background:url(#{member.profileImageUrl})')
+				.name= member.name
+				p.biography= member.biography
