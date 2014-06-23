@@ -9,7 +9,7 @@
 
 ### Modules
 
- - [Angular Carousel](https://github.com/revolunet/angular-carousel)
+ - [Sails Proto](https://github.com/PGCT1/sails-proto)
 
 
 ### Installation
