@@ -1,7 +1,7 @@
 
 $().ready(function(){
 
-  //set email to contact button href - do it this way to try to avoid crawler spam
+  // set email to contact button href - do it this way to try to avoid crawler spam
   
   var base64 = 'dDFnZW1pbmlAeWFuZGV4LnJ1';
 

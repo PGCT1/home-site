@@ -12,8 +12,13 @@ block content
 	.banner
 
 	ol.members.primary-content-holder
+
 		each member in members
+
 			li.member
+
 				.profile-image(style='background:url(#{member.profileImageUrl})')
+
 				.name= member.name
+				
 				p.biography= member.biography
