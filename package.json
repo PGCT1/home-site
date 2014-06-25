@@ -1,8 +1,8 @@
 {
-  "name": "home",
+  "name": "PGSite",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "Project Gemini Site",
   "keywords": [],
   "dependencies": {
     "sails": "~0.10.0-rc7",
@@ -20,7 +20,7 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-cssmin": "~0.9.0",
-    "grunt-contrib-less": "~0.10.0",
+    "grunt-sass": "~0.14.0",
     "grunt-contrib-coffee": "~0.10.1"
   },
   "scripts": {
@@ -32,6 +32,6 @@
     "type": "git",
     "url": "git://github.com/anonymous node/sails user/home.git"
   },
-  "author": "anonymous node/sails user",
-  "license": ""
+  "author": "Project Gemini Crimean Team 1",
+  "license": "MIT"
 }
