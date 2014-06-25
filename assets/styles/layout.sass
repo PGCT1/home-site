@@ -1,13 +1,12 @@
 @import "global"
 @import "components/index"
 
-$footer-height:28px
-
 html
 	height:100%
 
 	body
 		@extend .light-background
+
 		font-family:'Open Sans',sans-serif
 		font-size:18px
 		line-height:28px
@@ -15,15 +14,6 @@ html
 		position:relative
 		min-height:100%
 		padding-bottom:100px
-
-		panel
-			display:inline-block
-			padding:2px
-			border:1px solid rgba(0,0,0,.5)
-
-			inside
-				display:block
-				background-color:rgba(0,0,0,.8)
 		
 		a
 			text-decoration:none
@@ -33,30 +23,6 @@ html
 
 		p
 			margin-bottom:20px
-
-		#mainlogo
-			
-			.word1
-				color:$primary-color
-
-			.word2
-				color:white
-
-		.navbar
-			margin-bottom:0px
-
-		footer
-			position:absolute
-			bottom:0px
-			width:100%
-			display:block
-	    vertical-align:bottom
-			background-color:black
-			text-align:center
-			font-size:14px
-			color:#ddd
-			height:$footer-height
-			margin-top:-1 * $footer-height
 
 		li
 			-webkit-margin-before:0em
