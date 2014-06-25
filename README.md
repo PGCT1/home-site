@@ -4,7 +4,7 @@
 
  - [Sails](https://github.com/balderdashy/sails)
  - [Jade](https://github.com/visionmedia/jade)
- - [Less](https://github.com/less/less.js)
+ - [Sass](https://github.com/sindresorhus/grunt-sass)
  - [Angular](https://github.com/angular/angular.js)
 
 ### Modules
