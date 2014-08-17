@@ -1,0 +1,45 @@
+
+information-slide
+  background-color:#fcfcfc
+  background:linear-gradient(to bottom, #effeff 0%, #e0e6ef 100%)
+  min-height:600px
+  padding-top:60px
+
+  .features
+    margin-left:auto
+    margin-right:auto
+    font-family:'Roboto',sans-serif
+    max-width:920px
+    text-align:center
+
+    > .header
+      display:none
+      margin-left:auto
+      margin-right:auto
+      font-size:32px
+      margin-bottom:8px
+
+    .feature
+      display:inline-block
+      text-align:left
+      vertical-align:top
+      max-width:420px
+      margin:20px
+
+      .header
+        font-size:24px
+
+      .description
+        font-size:18px
+        color:#555
+
+@media(max-width:600px)
+  information-slide
+    padding-top:20px
+
+    .features
+      .header
+        display:block
+
+      .feature
+        margin:10px
