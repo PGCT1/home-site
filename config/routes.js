@@ -38,6 +38,9 @@ module.exports.routes = {
   },
   '/team':{
     view: 'team/index'
+  },
+  '/ambian':{
+    view: 'ambian-promo/index'
   }
 
 

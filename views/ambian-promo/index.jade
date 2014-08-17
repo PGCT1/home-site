@@ -1,0 +1,41 @@
+doctype
+html
+  head
+    title Ambian: The world speaks. Listen.
+
+    meta(charset='UTF-8')
+
+    // Viewport mobile tag for sensible mobile support
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+
+    link(href='http://fonts.googleapis.com/css?family=Roboto:400|Montserrat|Noto+Sans:400' rel='stylesheet' type='text/css')
+
+    link(href='/styles/ambian.css' rel='stylesheet' type='text/css')
+
+  body
+
+    splash-slide.slide
+
+      img.iPhone.screenMoreThan800(src='/images/ambian-promo/iphone.png')
+
+      splash-text
+
+        ambian-logo
+
+        h2 The world speaks. Listen.
+
+        .features
+
+          .feature
+            img.icon(src='/images/ambian-promo/instant.svg')
+            .description Bleeding-edge information streams
+
+          .feature
+            img.icon(src='/images/ambian-promo/soul-kitchen.svg')
+            .description Soul-kitchen pay model
+
+          .feature
+            img.icon(src='/images/ambian-promo/open-source.svg')
+            .description 100% open source
+
+      img.iPhone.screenLessThan800(src='/images/ambian-promo/iphone.png')
