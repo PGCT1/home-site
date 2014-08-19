@@ -1,15 +1,18 @@
 
-information-slide
+@media(max-width:1050px)
+  .desktop
+    display:none !important
+
+body information-slide.slide
   background-color:#fcfcfc
   background:linear-gradient(to bottom, #effeff 0%, #e0e6ef 100%)
   min-height:600px
-  padding-top:60px
+  padding-right:0px
+  padding-left:0px
 
   .features
     margin-left:auto
     margin-right:auto
-    font-family:'Roboto',sans-serif
-    max-width:920px
     text-align:center
 
     > .header
@@ -20,26 +23,55 @@ information-slide
       margin-bottom:8px
 
     .feature
-      display:inline-block
-      text-align:left
+      display:block
+      text-align:center
       vertical-align:top
-      max-width:420px
-      margin:20px
+      padding:40px
+      overflow:hidden
 
-      .header
-        font-size:24px
+      .text
+        display:inline-block
+        max-width:420px
+        vertical-align:top
+        text-align:left
+
+        .header
+          font-size:24px
+
+        .description
+          font-size:18px
+
+      img
+        width:420px
+
+      .img
+        width:300px
+        height:300px
+        display:inline-block
+        background-size:cover
+
+    .feature:nth-child(even)
+      background:#111
+      color:#eee
+
+      .img
+        margin-right:15%
+        margin-left:60px
 
       .description
-        font-size:18px
+        color:#ccc
+
+    .feature:nth-child(odd)
+      background:#fcfcfc
+      color:black
+
+      .img
+        margin-left:15%
+        margin-right:60px
+
+      .description
         color:#555
 
-@media(max-width:600px)
-  information-slide
-    padding-top:20px
-
-    .features
-      .header
-        display:block
-
-      .feature
-        margin:10px
+  @media(max-width:600px)
+    .features .feature
+      padding:20px
