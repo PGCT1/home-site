@@ -54,14 +54,30 @@ splash-slide
           margin-top:10px
           font-size:18px
 
-    a.androidStore
-      display:block
-      width:200px
-      height:69px
-      margin-top:25px
+    .appstoreButtons
       margin-left:auto
       margin-right:auto
-      background-size:contain
+
+      a.appStore
+        display:inline-block
+        width:220px
+        height:75px
+        margin-top:25px
+        margin-right:25px
+        background-size:contain
+
+      a.androidStore
+        display:inline-block
+        width:220px
+        height:75px
+        margin-top:25px
+        background-size:cover
+
+      @media(max-width:600px)
+        a.androidStore, a.appStore
+          display:block
+          margin-right:auto
+          margin-left:auto
 
   @media(max-width:800px)
       padding-top:50px
